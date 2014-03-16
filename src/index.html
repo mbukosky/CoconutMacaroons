@@ -1,17 +1,26 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Lauren Meley</title>
 
 	<link rel="stylesheet" href="../vendor/bootstrap/3.1.1/css/bootstrap.min.css">
-	<script src="../vendor/bootstrap/3.1.1/js/boostrap.min.js"></script>
+	
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+	<script src="vendor/angular/1.2.14/angular.min.js"></script>
+	<script src="vendor/angular/1.2.14/angular-route.min.js"></script>
+	<script src="vendor/angular/1.2.14/angular-sanitize.min.js"></script>
+	<script src="vendor/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+	<!-- My files -->
+	<script src="src/app/app.js"></script>
+	<script src="src/app/controllers/home.ctrl.js" ></script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -21,18 +30,7 @@
     <![endif]-->
 </head>
 <body>
-	<div class="container">
-		<nav class="navbar navbar-inverse">
-			<a class="navbar-brand" href="#">Lauren Meley</a>
-			<ul class="nav navbar-nav">
-				<li class="active">
-					<a href="#">Home</a>
-				</li>
-				<li>
-					<a href="#">Link</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
+	<div ng-include="'src/app/header.tpl.html'"></div>
+	<div ng-view></div>
 </body>
 </html>

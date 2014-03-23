@@ -1,9 +1,9 @@
-angular.module('app', [
+var app = angular.module('app', [
 	'ngRoute',
 	'ngSanitize'
 ]);
 
-angular.module('app').config(['$routeProvider', '$locationProvider', 
+app.config(['$routeProvider', '$locationProvider', 
 	function($routeProvider, $locationProvider) {
 		//$locationProvider.html5Mode(true);
 
@@ -51,3 +51,9 @@ angular.module('app').config(['$routeProvider', '$locationProvider',
 				redirectTo: '/'
 			});	
 }]);
+
+app.run(function ($rootScope, $location) {
+    $rootScope.$on('$routeChangeSuccess', function(){
+        ga('send', 'pageview', $location.path());
+    });
+});

@@ -9,17 +9,11 @@ angular.module('app').config(['$routeProvider', '$locationProvider',
 
 		$routeProvider.
 			when('/', {
-				templateUrl: '/src/app/partials/home.tpl.html',
-				controller: 'HomeCtrl',
-				resolve :{
-					title: function() { 
-						return 'Home'; 
-					}
-				}
+				templateUrl: '/src/app/partials/home.tpl.html'
 			}).
 			when('/news', {
-				templateUrl: '/src/app/partials/home.tpl.html',
-				controller: 'HomeCtrl',
+				templateUrl: '/src/app/partials/news.tpl.html',
+				controller: 'BlankCtrl',
 				resolve: {
 					title: function() { 
 						return 'News'; 
@@ -27,8 +21,8 @@ angular.module('app').config(['$routeProvider', '$locationProvider',
 				}
 			}).
 			when('/resume', {
-				templateUrl: '/src/app/partials/home.tpl.html',
-				controller: 'HomeCtrl',
+				templateUrl: '/src/app/partials/blank.tpl.html',
+				controller: 'BlankCtrl',
 				resolve: {
 					title: function() { 
 						return 'Resume'; 
@@ -36,8 +30,8 @@ angular.module('app').config(['$routeProvider', '$locationProvider',
 				}
 			}).
 			when('/photos', {
-				templateUrl: '/src/app/partials/home.tpl.html',
-				controller: 'HomeCtrl',
+				templateUrl: '/src/app/partials/blank.tpl.html',
+				controller: 'BlankCtrl',
 				resolve: {
 					title: function() { 
 						return 'Photos'; 
@@ -45,8 +39,8 @@ angular.module('app').config(['$routeProvider', '$locationProvider',
 				}
 			}).
 			when('/videos', {
-				templateUrl: '/src/app/partials/home.tpl.html',
-				controller: 'HomeCtrl',
+				templateUrl: '/src/app/partials/blank.tpl.html',
+				controller: 'BlankCtrl',
 				resolve: {
 					title: function() { 
 						return 'Videos'; 

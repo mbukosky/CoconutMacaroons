@@ -1,6 +1,7 @@
 var app = angular.module('app', [
 	'ngRoute',
-	'ngSanitize'
+	'ngSanitize',
+	'ui.bootstrap'
 ]);
 
 app.config(['$routeProvider', '$locationProvider', 
@@ -9,7 +10,8 @@ app.config(['$routeProvider', '$locationProvider',
 
 		$routeProvider.
 			when('/', {
-				templateUrl: '/src/app/partials/home.tpl.html'
+				templateUrl: '/src/app/partials/home.tpl.html',
+				controller: 'CarouselCtrl'
 			}).
 			when('/news', {
 				templateUrl: '/src/app/partials/news.tpl.html',

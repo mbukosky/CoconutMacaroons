@@ -43,6 +43,14 @@ body {
 
 /* CUSTOMIZE ALIGNMENTS
 -------------------------------------------------- */
+.container-fixed {
+    height: 100%;
+    display: table;
+    width: 100%;
+    padding-right: 25%;
+    padding-left: 25%;
+}
+
 .container-fluid {
     height: 100%;
     display: table;

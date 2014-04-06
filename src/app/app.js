@@ -24,12 +24,7 @@ app.config(['$routeProvider', '$locationProvider',
 			}).
 			when('/resume', {
 				templateUrl: '/src/app/partials/resume.tpl.html',
-				controller: 'BlankCtrl',
-				resolve: {
-					title: function() { 
-						return 'Resume'; 
-					}
-				}
+				controller: 'ResumeCtrl'
 			}).
 			when('/photos', {
 				templateUrl: '/src/app/partials/blank.tpl.html',

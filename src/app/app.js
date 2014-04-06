@@ -23,7 +23,7 @@ app.config(['$routeProvider', '$locationProvider',
 				}
 			}).
 			when('/resume', {
-				templateUrl: '/src/app/partials/blank.tpl.html',
+				templateUrl: '/src/app/partials/resume.tpl.html',
 				controller: 'BlankCtrl',
 				resolve: {
 					title: function() { 

@@ -1,52 +1,220 @@
-<div class="container-fluid">
-    <div class="row-fluid">
-        <carousel interval="interval">
-            <slide class="item">
-                <div class="carousel-caption">
-                    <a>
-                        <img src="/src/assets/img/photos/lauren_meley_headshot.jpg" alt="First slide">
-                    </a>
-                    <div>
-                        <h1>Lauren Meley</h1>
-                        <p><i>actor. writer. dancer</i>
-                        </p>
-                    </div>
-                </div>
-            </slide>
-            <slide>
-                <div class="container-fluid">
-                    <div class="row-fluid">
-                        <div class="centering text-center vimeo widescreen">
-                            <iframe src="//player.vimeo.com/video/87091260" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                            <h3>
-                                <p><a href="http://vimeo.com/87091260">Lauren Meley Reel</a> from <a href="http://vimeo.com/laurenmeley">Lauren Meley</a>.</p>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-            </slide>
-            <slide class="item">
-                <div class="container-fixed">
-                    <div class="row-fluid">
-                        <div class="text-center">
-                            <h1>Current Projects</h1>
-                            <br>
-                            <p>
-                                <ul>
-                                    <li class="text-left">IN FEAR OF: MNEMOPHOBIA - Principal role in webseries episode. Season 2 airs on YouTube this fall. More coming soon!</li>
-                                    <br>
-                                    <li class="text-left">MOST LIKELY TO... Principal role in Discovery ID’s new true-crime docudrama series. Episode premieres on Wednesday, June 12th at 9pm on the Investigation Discovery channel.</li>
-                                    <br>
-                                    <li class="text-left">THE SPACESHIP - Starring role in independent sci-fi feature. Also co-produced. In post-production. Check out the Official Website!</li>
-                                    <br>
-                                </ul>
-                                <a class="btn btn-lg btn-primary" href="#/news" role="button">Latest News</a>
-                            </p>
+<div>
 
-                        </div>
-                    </div>
+    <!-- HEADER -->
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row">
+                <div class="pull-left">
+                    <h1>Lauren Meley</h1>
+                    <h3>Actor, Writer, Dancer | lmeley@gmail.com</h3>
                 </div>
-            </slide>
-        </carousel>
+            </div>
+        </div>
+    </div>
+
+    <!-- BIO -->
+    <section id="bio" name="bio"></section>
+    <div id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-lg-offset-1">
+                    <h5>BIO</h5>
+                </div>
+                <div class="col-lg-6">
+                    <p>"Lauren is such a talented actress, and working with her truly made my experience a joy. Her perceptiveness in taking direction is more than any director could hope to find in an actor." - Lily Riopelle (Dir. Three Cheers for the UFO)</p>
+                </div>
+                <div class="col-lg-3">
+                    <p><a href="#/news"><i class="fa fa-film icon-white"></i></a> 
+                        <sm>LATEST NEWS</sm>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="resume" name="resume"></section>
+    <!-- <a id="resume"></a> -->
+
+    <!-- FILM -->
+    <div class="container resume-wrap">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>FILM</h5>
+            </div>
+            <div class="col-lg-6">
+                <p ng-repeat="entry in film">
+                    <t>{{entry.title}}</t>
+                    <br/>{{entry.role}}
+                    <br/>
+                    <i>{{entry.production}}</i>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><a href="#"><i class="fa fa-download icon-white"></i></a> 
+                    <sm>DOWNLOAD PDF</sm>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <!-- THEATER -->
+    <div class="container resume-wrap">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>THEATER</h5>
+            </div>
+            <div class="col-lg-6">
+                <p ng-repeat="entry in theater.off_broadway">
+                    <t>{{entry.title}}</t>
+                    <br/>{{entry.role}}
+                    <br/>
+                    <i>{{entry.production}}</i>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><i>Off-Broadway</i>
+                </p>
+            </div>
+            <div class="col-lg-6 col-lg-offset-3">
+                <p ng-repeat="entry in theater.off_off_broadway">
+                    <t>{{entry.title}}</t>
+                    <br/>{{entry.role}}
+                    <br/>
+                    <i>{{entry.production}}</i>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><i>Off-Off-Broadway</i>
+                </p>
+            </div>
+            <div class="col-lg-6 col-lg-offset-3">
+                <p ng-repeat="entry in theater.baltimore">
+                    <t>{{entry.title}}</t>
+                    <br/>{{entry.role}}
+                    <br/>
+                    <i>{{entry.production}}</i>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><i>MD / Baltimore Theater</i>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <!-- TELEVISION -->
+    <div class="container resume-wrap">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>TELEVISION</h5>
+            </div>
+            <div class="col-lg-6">
+                <p ng-repeat="entry in tv">
+                    <t>{{entry.title}}</t>
+                    <br/>{{entry.role}}
+                    <br/>
+                    <i>{{entry.production}}</i>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <!-- WEB SERIES -->
+    <div class="container resume-wrap">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>WEB SERIES</h5>
+            </div>
+            <div class="col-lg-6">
+                <p ng-repeat="entry in web">
+                    <t>{{entry.title}}</t>
+                    <br/>{{entry.role}}
+                    <br/>
+                    <i>{{entry.production}}</i>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <!-- REPRESENTATIVE ROLES -->
+    <div class="container resume-wrap">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>REPRESENTATIVE ROLES</h5>
+            </div>
+            <div class="col-lg-6">
+                <p ng-repeat="entry in rep_roles">
+                    <t>{{entry.title}}</t>
+                    <br/>{{entry.role}}
+                    <br/>
+                    <i>{{entry.production}}</i>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p><i>In-Class Work</i>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <!-- TRAINING -->
+    <div class="container resume-wrap">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>TRAINING</h5>
+            </div>
+            <div class="col-lg-6">
+                <p ng-repeat="entry in training">
+                    <t>{{entry.title}}</t>
+                    <br/>{{entry.role}}
+                    <br/>
+                    <i>{{entry.production}}</i>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <!-- SPECIAL TALENTS -->
+    <div class="container resume-wrap">
+        <div class="row">
+            <div class="col-lg-2 col-lg-offset-1">
+                <h5>SPECIAL TALENTS</h5>
+            </div>
+            <div class="col-lg-6">
+                <p>{{special.general.join(', ')}}</p>
+            </div>
+            <div class="col-lg-3">
+                <p><i>General</i>
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <p>{{special.dance_movement.join(', ')}}</p>
+            </div>
+            <div class="col-lg-3">
+                <p><i>Dance/Movement</i>
+                </p>
+            </div>
+            <div class="col-lg-6 col-lg-offset-3">
+                <p>{{special.accents.join(', ')}}</p>
+            </div>
+            <div class="col-lg-3">
+                <p><i>Accenets</i>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
     </div>
 </div>

@@ -11,8 +11,14 @@ body {
 }
 body {
   color: #fff;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+
+/* Navbar
+-------------------------------------------------- */
+
+/* Remove the extra margin in the default navbar */
+.navbar {
+  margin-bottom:0;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -53,6 +59,77 @@ body {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+}
+
+/* Section Styles
+---------------------------------------------------*/
+
+/* Header Wrap */
+#headerwrap {
+  background: url(../assets/img/photos/bio/media/bio_header.jpg) no-repeat center top;
+  padding-top:140px;
+  text-align:center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 500px;
+  width: 100%;
+  
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+  font-size: 70px;
+  color: white;
+}
+
+#headerwrap h3 {
+  font-size: 20px;
+  color: white;
+}
+
+/* Intro Wrap */
+
+#intro {
+  background: #2c3e50;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  color: white;
+} 
+
+#intro h5, p {
+  color: white;
+}
+
+/* Resume Wrap */
+
+.resume-wrap {
+  padding-top: 50px;
+}
+
+.resume-wrap p {
+  color: white;
+}
+
+.resume-wrap t {
+  color: #c1e2ff;
+  font-weight: 700;
+}
+
+/* Icon Style */
+
+.icon-white {
+  color: white;
+  font-size: 20px;
+  padding-right: 8px;
+  vertical-align: middle;
 }
 
 /* CUSTOMIZE ALIGNMENTS

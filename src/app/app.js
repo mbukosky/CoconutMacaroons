@@ -50,4 +50,12 @@ app.run(function($rootScope, $location) {
     $rootScope.$on('$routeChangeSuccess', function() {
         ga('send', 'pageview', $location.path());
     });
+
+    /* Set active tab in nav bar */
+    var path = function() {
+        return $location.path();
+    };
+    $rootScope.$watch(path, function(newVal, oldVal) {
+        $rootScope.activetab = newVal;
+    });
 });

@@ -1,20 +1,20 @@
 <nav class="navbar navbar-inverse" role="navigation">
     <a class="navbar-brand" href="#" style="color:#EB6A95">Lauren Meley</a>
     <ul class="nav navbar-nav">
-        <li class="active">
+        <li ng-class="{active: activetab == '/'}">
             <a href="#">
                 <span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a>
         </li>
-        <li>
+        <li ng-class="{active: activetab == '/news'}">
             <a href="#/news">News</a>
         </li>
         <li>
             <a href="#/#resume">Resume</a>
         </li>
-        <li>
+        <li ng-class="{active: activetab == '/photos'}">
             <a href="#/photos">Photos</a>
         </li>
-        <li>
+        <li ng-class="{active: activetab == '/videos'}">
             <a href="#/videos">Videos</a>
         </li>
     </ul>

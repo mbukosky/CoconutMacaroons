@@ -23,13 +23,8 @@ app.config(['$routeProvider', '$locationProvider',
             }
         }).
         when('/photos', {
-            templateUrl: '/src/app/partials/blank.tpl.html',
+            templateUrl: '/src/app/partials/photos.tpl.html',
             controller: 'BlankCtrl',
-            resolve: {
-                title: function() {
-                    return 'Photos';
-                }
-            }
         }).
         when('/videos', {
             templateUrl: '/src/app/partials/blank.tpl.html',

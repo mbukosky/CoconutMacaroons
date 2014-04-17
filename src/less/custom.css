@@ -4,6 +4,9 @@
  * Base structure
  */
 
+/* Override all fonts */
+*{font-family: 'Roboto', sans-serif;}
+
 html,
 body {
   height: 100%;

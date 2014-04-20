@@ -24,7 +24,7 @@ app.config(['$routeProvider', '$locationProvider',
         }).
         when('/photos', {
             templateUrl: '/src/app/partials/photos.tpl.html',
-            controller: 'BlankCtrl',
+            controller: 'PhotosCtrl'
         }).
         when('/videos', {
             templateUrl: '/src/app/partials/blank.tpl.html',

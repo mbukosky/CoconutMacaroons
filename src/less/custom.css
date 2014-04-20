@@ -105,7 +105,7 @@ body {
   padding-top: 100px;
   padding-bottom: 60px;
   color: white;
-} 
+}
 
 #intro h5, p {
   color: white;
@@ -145,6 +145,13 @@ body {
 #footwrap t {
   color: #c1e2ff;
   font-weight: 700;
+}
+
+/* Photo Wrap */
+
+#photo {
+  padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 /* Icon Style */

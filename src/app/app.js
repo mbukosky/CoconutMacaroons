@@ -27,13 +27,8 @@ app.config(['$routeProvider', '$locationProvider',
             controller: 'PhotosCtrl'
         }).
         when('/videos', {
-            templateUrl: '/src/app/partials/blank.tpl.html',
-            controller: 'BlankCtrl',
-            resolve: {
-                title: function() {
-                    return 'Videos';
-                }
-            }
+            templateUrl: '/src/app/partials/videos.tpl.html',
+            controller: 'VideosCtrl'
         }).
         otherwise({
             redirectTo: '/'

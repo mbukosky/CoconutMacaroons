@@ -154,6 +154,13 @@ body {
   padding-bottom: 60px;
 }
 
+/* Video Wrap */
+
+#video {
+  padding-top: 100px;
+  padding-bottom: 60px;
+}
+
 /* Icon Style */
 
 .icon-white {

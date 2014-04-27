@@ -199,6 +199,16 @@ body {
   vertical-align: middle;
 }
 
+/* Hyperlink Style */
+
+.intro, .resume-wrap, a sm {
+  color: white;
+}
+
+.intro, .resume-wrap, a:hover{
+  text-decoration:none;
+}
+
 /* CUSTOMIZE ALIGNMENTS
 -------------------------------------------------- */
 .container-fixed {

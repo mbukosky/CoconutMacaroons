@@ -12,43 +12,72 @@ body {
   height: 100%;
   background-color: #333;
 }
-body {
-  color: #fff;
-}
 
 /* Navbar
 -------------------------------------------------- */
+.navbar{
+  margin-bottom:0px; /* Remove the extra margin in the default navbar */
+}
 
-/* Remove the extra margin in the default navbar */
 .navbar {
-  margin-bottom:0;
+  margin-bottom:0px;
+  background-color: #222222;
+  border: 0px;
+  background: #222222;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #545353), color-stop(100%, #222222));
+  background: -webkit-linear-gradient(top, #545353,#222222);
+  background: -moz-linear-gradient(top, #545353,#222222);
+  background: -o-linear-gradient(top, #545353,#222222);
+  background: -ms-linear-gradient(top, #545353,#222222);
+  background: linear-gradient(top, #545353,#222222);
 }
 
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
+.navbar-default .navbar-brand {
+  color: #fff;
+  text-shadow: none;
+  padding-left: 60px;
+  height: 28px;
 }
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-  background-color: #777;
+.navbar-default .nav-pills li a {
+  padding: 3px 10px 3px 10px;
 }
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #EB6A95;
+  background-color: transparent;
 }
+
+.navbar-default .navbar-inner .nav li a {
+  color: #fff;
+  text-shadow: none;
+  background: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: background 0.1s linear,opacity 0.1s linear;
+  -moz-transition: background 0.1s linear,opacity 0.1s linear;
+  -ms-transition: background 0.1s linear,opacity 0.1s linear;
+  -o-transition: background 0.1s linear,opacity 0.1s linear;
+  transition: background 0.1s linear,opacity 0.1s linear;
+  -webkit-font-smoothing: antialiased;      
+  opacity: .9;
+  font-weight: 600;
+}
+
+.navbar-default .navbar-inner .nav li a:hover {
+  background: #EB6A95;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  opacity: 1;
+}
+
+.navbar-xs .navbar-default .navbar { min-height:28px; } 
+.navbar-xs .navbar-default .navbar .navbar-brand{ padding: 8px 8px 8px 30px;font-size: 16px;line-height: 18px; } 
+.navbar-xs .navbar-default .navbar .navbar-nav > li > a {  padding-top: 7px; padding-bottom: 7px; line-height: 20px; } 
 
 /* Featurettes
 ------------------------- */

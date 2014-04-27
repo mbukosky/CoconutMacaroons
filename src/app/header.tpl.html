@@ -1,43 +1,59 @@
-<nav class="navbar navbar-inverse" role="navigation">
-    <a class="navbar-brand" href="#" style="color:#EB6A95">Lauren Meley</a>
-    <ul class="nav navbar-nav">
-        <li ng-class="{active: activetab == '/'}">
-            <a href="#">
-                <span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a>
-        </li>
-        <li ng-class="{active: activetab == '/news'}">
-            <a href="#/news">News</a>
-        </li>
-        <li>
-            <a href="#/#resume">Resume</a>
-        </li>
-        <li ng-class="{active: activetab == '/photos'}">
-            <a href="#/photos">Photos</a>
-        </li>
-        <li ng-class="{active: activetab == '/videos'}">
-            <a href="#/videos">Videos</a>
-        </li>
-    </ul>
-    <ul class="nav nav-pills pull-right">
-        <li>
-            <a href="https://twitter.com/laurenmeley" target="_blank">
-                <i class="fa fa-twitter fa-2x" style="color:#55ACEE"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/user/laurenmeley" target="_blank">
-                <i class="fa fa-youtube fa-2x" style="color:#e52d27"></i>
-            </a>
-        </li>
-        <li>
-            <a href="http://instagram.com/laurenmeley" target="_blank">
-                <i class="fa fa-instagram fa-2x" style="color:#4E433C"></i>
-            </a>
-        </li>
-        <li>
-            <a href="http://www.imdb.com/name/nm2420016" target="_blank">
-                <img src="/src/assets/img/social/imdb_logo.png" />
-            </a>
-        </li>
-    </ul>
-</nav>
+<div class="navbar-xs">
+    <div class="navbar-default">
+        <nav class="navbar navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Lauren Meley</a>
+            </div>
+            <div class="navbar-inner">
+                <div id="navbar-collapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ng-class="{active: activetab == '/'}">
+                            <a href="#">
+                                <span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a>
+                        </li>
+                        <li ng-class="{active: activetab == '/news'}">
+                            <a href="#/news">News</a>
+                        </li>
+                        <li>
+                            <a href="#/#resume">Resume</a>
+                        </li>
+                        <li ng-class="{active: activetab == '/photos'}">
+                            <a href="#/photos">Photos</a>
+                        </li>
+                        <li ng-class="{active: activetab == '/videos'}">
+                            <a href="#/videos">Videos</a>
+                        </li>
+                    </ul>
+                    <ul class="nav nav-pills pull-right visible-lg visible-md visible-sm">
+                        <li>
+                            <a href="https://twitter.com/laurenmeley" target="_blank">
+                                <i class="fa fa-twitter fa-2x" style="color:#55ACEE"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/laurenmeley" target="_blank">
+                                <i class="fa fa-youtube fa-2x" style="color:#e52d27"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://instagram.com/laurenmeley" target="_blank">
+                                <i class="fa fa-instagram fa-2x" style="color:#4E433C"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://www.imdb.com/name/nm2420016" target="_blank">
+                                <img src="/src/assets/img/social/imdb_logo.png" style="height:28px; width=100%;"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>

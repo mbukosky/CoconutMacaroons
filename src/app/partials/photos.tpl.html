@@ -1,7 +1,7 @@
-<div id="photo" class="container-fluid">
+<div id="photo" class="container">
     <div class="row-fluid">
         <div class="text-center">
-            <a ng-repeat="image in images" class="fancybox-thumb" rel="fancybox-thumb" href="{{image.full_size}}" title="{{image.title}}">
+            <a ng-repeat="image in images" class="fancybox-thumb" rel="fancybox-thumb" style="padding: 10px;" href="{{image.full_size}}" title="{{image.title}}">
                 <img src="{{image.thumbnail}}" alt="" />
             </a>
         </div>

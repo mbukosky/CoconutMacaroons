@@ -17,13 +17,13 @@
     <div id="intro">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-1">
                     <h5>BIO</h5>
                 </div>
-                <div class="col-lg-6">
-                    <p>Thanks for checking out my site! Here's a little bit about me. My theatrical credits include the Off-Broadway production of <i>The Columbine Project</i> and, most recently, playing the role of Ann Deever in a production of <i>All My Sons</i> at The Morningside Players. My film credits include a wide-range of indie projects, including the award-winning short CAROLINE OF VIRGINIA and the upcoming sci-fi feature THE SPACESHIP (2015). I trained three years at T. Schreiber Studio (Six-week Conservatory, and Scene Study with Peter Jensen and Terry Schreiber) and two years at Penny Templeton Studio (Advanced On-Camera and Master Scene Study). I continue to train and coach with Penny, and both studios continue to offer a creative home where I will be forever grateful. In between acting jobs I run scavenger hunts throughout the city (yes, it's as fun as it sounds!) and dabble in writing. I've written a couple short films; one quirky romantic comedy called BEAR NECESSITY was produced and is currently making the festival circuit. But my heart and soul will always be onstage or in front of the camera; it's a comforting, magical place. I grew up in Baltimore as a dancer, and developed a strong sense of discipline and primal storytelling that I carry with me everyday as an actor. I continue to take dance classes around the city, at Joffrey Ballet School and 92nd Street Y. You can check out my full resume, photos and videos on this site, and more on IMDb, Facebook, Twitter. </p>
+                <div class="col-lg-9">
+                    <p>Thanks for checking out my site! Here's a little bit about me. My theatrical credits include <i>The Columbine Project</i> Off-Broadway and, most recently, playing the role of Ann Deever in a production of <i>All My Sons</i> at The Morningside Players. My film credits include a wide-range of indie projects, including the award-winning short CAROLINE OF VIRGINIA and the upcoming sci-fi feature THE SPACESHIP (2015). My recent training includes three years at T. Schreiber Studio and two years at Penny Templeton Studio. I continue to train and coach with Penny, and both studios continue to offer a creative home where I will be forever grateful. In between acting jobs I run scavenger hunts throughout the city (yes, it's as fun as it sounds!) and dabble in writing. A quirky romantic comedy short film I wrote called BEAR NECESSITY was produced, and is currently making the festival circuit. I grew up in Baltimore as a dancer, and developed a strong sense of discipline and primal storytelling that I carry with me everyday as an actor. I continue to take dance classes around the city, at Joffrey Ballet School and 92nd Street Y. You can check out my full resume, photos and videos on this site, and more on IMDb, Facebook, Twitter.</p>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <p>
                         <a href="#/news"><i class="fa fa-film icon-white"></i>
                         <sm>LATEST NEWS</sm>
@@ -38,7 +38,46 @@
     <!-- <a id="resume"></a> -->
 
     <!-- FILM -->
-    <div class="container resume-wrap">
+    <div class="container resume-wrap visible-lg">
+        <div class="row">
+            <div class="col-lg-1">
+                <h5>FILM</h5>
+            </div>
+            <div class="col-lg-3">
+                <t>Title</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Role</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Production</t>
+            </div>
+            <div class="col-lg-2">
+                <p>
+                    <a class="fancybox-pdf" data-fancybox-type="iframe" href="/src/assets/LaurenMeleyResume.pdf"><i class="fa fa-download icon-white"></i>
+                    <sm>DOWNLOAD PDF</sm>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row" ng-repeat="entry in film">
+            <div class="col-lg-3 col-lg-offset-1">
+                <p>
+                    <i>{{entry.title}}<i/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.role}}</p>
+            </div>
+            <div class="col-lg-5">
+                <p>{{entry.production}}</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <div class="container resume-wrap hidden-lg">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-1">
                 <h5>FILM</h5>
@@ -64,7 +103,77 @@
     </div>
 
     <!-- THEATER -->
-    <div class="container resume-wrap">
+    <div class="container resume-wrap visible-lg">
+        <div class="row">
+            <div class="col-lg-1">
+                <h5>THEATER</h5>
+            </div>
+            <div class="col-lg-3">
+                <t>Title</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Role</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Production</t>
+            </div>
+        </div>
+        <div class="row" ng-repeat="entry in theater.off_broadway">
+            <div class="col-lg-3 col-lg-offset-1">
+                <p>
+                    <i>{{entry.title}}<i/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.role}}</p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.production}}</p>
+            </div>
+            <div class="col-lg-2" ng-show="$first">
+                <p><i>Off-Broadway</i>
+                </p>
+            </div>
+        </div>
+        <div class="row" ng-repeat="entry in theater.off_off_broadway">
+            <div class="col-lg-3 col-lg-offset-1">
+                <p>
+                    <i>{{entry.title}}<i/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.role}}</p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.production}}</p>
+            </div>
+            <div class="col-lg-2" ng-show="$first">
+                <p><i>Off-Off-Broadway</i>
+                </p>
+            </div>
+        </div>
+        <div class="row" ng-repeat="entry in theater.baltimore">
+            <div class="col-lg-3 col-lg-offset-1">
+                <p>
+                    <i>{{entry.title}}<i/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.role}}</p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.production}}</p>
+            </div>
+            <div class="col-lg-2" ng-show="$first">
+                <p><i>MD / Baltimore Theater</i>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <div class="container resume-wrap hidden-lg">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-1">
                 <h5>THEATER</h5>
@@ -111,7 +220,39 @@
     </div>
 
     <!-- TELEVISION -->
-    <div class="container resume-wrap">
+    <div class="container resume-wrap visible-lg">
+        <div class="row">
+            <div class="col-lg-1">
+                <h5>TELEVISION</h5>
+            </div>
+            <div class="col-lg-3">
+                <t>Title</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Role</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Production</t>
+            </div>
+        </div>
+        <div class="row" ng-repeat="entry in tv">
+            <div class="col-lg-3 col-lg-offset-1">
+                <p>
+                    <i>{{entry.title}}<i/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.role}}</p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.production}}</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <div class="container resume-wrap hidden-lg">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-1">
                 <h5>TELEVISION</h5>
@@ -130,7 +271,39 @@
     </div>
 
     <!-- WEB SERIES -->
-    <div class="container resume-wrap">
+    <div class="container resume-wrap visible-lg">
+        <div class="row">
+            <div class="col-lg-1">
+                <h5>WEB SERIES</h5>
+            </div>
+            <div class="col-lg-3">
+                <t>Title</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Role</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Production</t>
+            </div>
+        </div>
+        <div class="row" ng-repeat="entry in web">
+            <div class="col-lg-3 col-lg-offset-1">
+                <p>
+                    <i>{{entry.title}}<i/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.role}}</p>
+            </div>
+            <div class="col-lg-4">
+                <p>{{entry.production}}</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <div class="container resume-wrap hidden-lg">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-1">
                 <h5>WEB SERIES</h5>
@@ -149,7 +322,43 @@
     </div>
 
     <!-- REPRESENTATIVE ROLES -->
-    <div class="container resume-wrap">
+    <div class="container resume-wrap visible-lg">
+        <div class="row">
+            <div class="col-lg-1">
+                <h5>REPRESENTATIVE ROLES</h5>
+            </div>
+            <div class="col-lg-3">
+                <t>Title</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Role</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Production</t>
+            </div>
+        </div>
+        <div class="row" ng-repeat="entry in rep_roles">
+            <div class="col-lg-3 col-lg-offset-1">
+                <p>
+                    <i>{{entry.title}}<i/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.role}}</p>
+            </div>
+            <div class="col-lg-2">
+                <p>{{entry.production}}</p>
+            </div>
+            <div class="col-lg-2 col-lg-offset-1" ng-show="$first">
+                <p><i>In-Class Work</i>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <div class="container resume-wrap hidden-lg">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-1">
                 <h5>REPRESENTATIVE ROLES</h5>
@@ -172,7 +381,39 @@
     </div>
 
     <!-- TRAINING -->
-    <div class="container resume-wrap">
+    <div class="container resume-wrap visible-lg">
+        <div class="row">
+            <div class="col-lg-1">
+                <h5>TRAINING</h5>
+            </div>
+            <div class="col-lg-3">
+                <t>Title</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Role</t>
+            </div>
+            <div class="col-lg-3">
+                <t>Production</t>
+            </div>
+        </div>
+        <div class="row" ng-repeat="entry in training">
+            <div class="col-lg-3 col-lg-offset-1">
+                <p>
+                    <i>{{entry.title}}<i/>
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <p>{{entry.role}}</p>
+            </div>
+            <div class="col-lg-4">
+                <p>{{entry.production}}</p>
+            </div>
+        </div>
+        <br>
+        <hr>
+    </div>
+
+    <div class="container resume-wrap hidden-lg">
         <div class="row">
             <div class="col-lg-2 col-lg-offset-1">
                 <h5>TRAINING</h5>
@@ -193,34 +434,40 @@
     <!-- SPECIAL TALENTS -->
     <div class="container resume-wrap">
         <div class="row">
-            <div class="col-lg-2 col-lg-offset-1">
+            <div class="col-lg-2">
                 <h5>SPECIAL TALENTS</h5>
             </div>
             <div class="col-lg-6">
                 <p>{{special.general.join(', ')}}</p>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2 col-lg-offset-2">
                 <p><i>General</i>
                 </p>
             </div>
-            <div class="col-lg-6">
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-2">
                 <p>{{special.dance_movement.join(', ')}}</p>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2 col-lg-offset-2">
                 <p><i>Dance/Movement</i>
                 </p>
             </div>
-            <div class="col-lg-6 col-lg-offset-3">
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-2">
                 <p>{{special.accents.join(', ')}}</p>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-2 col-lg-offset-2">
                 <p><i>Accents</i>
                 </p>
             </div>
-            <div class="col-lg-6 col-lg-offset-3">
+        </div>
+        <div class="row">
+            <div class="col-lg-7 col-lg-offset-2">
                 <p>{{special.fun_facts.join(', ')}}</p>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-1 col-lg-offset-1">
                 <p><i>Fun Facts</i>
                 </p>
             </div>
@@ -233,7 +480,7 @@
     <div id="footwrap">
         <div class="container">
             <div class="row">
-                <div class="col-lg-2 col-lg-offset-1">
+                <div class="col-lg-2">
                     <h5>DIRECT CONTACT</h5>
                 </div>
                 <div class="col-lg-2">
@@ -248,7 +495,7 @@
                         <br/>
                     </p>
                 </div>
-                <div class="col-lg-3 col-lg-offset-1">
+                <div class="col-lg-3 col-lg-offset-2">
                     <h5>PETER COE TALENT AGENCY</h5>
                 </div>
                 <div class="col-lg-2">

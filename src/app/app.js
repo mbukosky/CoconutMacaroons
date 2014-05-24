@@ -1,8 +1,12 @@
 var app = angular.module('app', [
     'ngRoute',
     'ngSanitize',
-    'ui.bootstrap'
+    'ui.bootstrap',
+    'duScroll'
 ]);
+
+/* Override default duration of smooth scroll */
+app.value('duScrollDuration', 2000);
 
 app.config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {

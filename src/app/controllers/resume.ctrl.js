@@ -5,6 +5,10 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
         if ($location.$$hash == 'resume') {
             var someElement = angular.element(document.getElementById('resume'));
             $document.scrollToElement(someElement, 0, 2000);
+        } else if ($location.$$hash == 'contact') {
+            //For some reason the height of the document is now calculating correctly,
+            //so lets just hard code it for now
+            $document.scrollTop(3000, 2000)
         }
 
         $scope.film = [{

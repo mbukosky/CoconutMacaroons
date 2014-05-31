@@ -209,8 +209,40 @@ body {
   text-decoration:none;
 }
 
+/* News Style */
+
+.media .media-body em,h4,i {
+  color: white;
+}
+
+.img-thumbnail {  
+  display: inline-block;  
+  height: auto;  
+  max-width: 100%;  
+  padding: 1px;  
+  line-height: 1.428571429;  
+  background-color: #ffffff;  
+  border: 1px solid #dddddd;  
+  border-radius: 4px;  
+  -webkit-transition: all 0.2s ease-in-out;  
+          transition: all 0.2s ease-in-out;  
+}
+
 /* CUSTOMIZE ALIGNMENTS
 -------------------------------------------------- */
+.v-center {display:table!important; height:125px;}
+
+.v-center div[class*='col-'] {
+  display: table-cell!important;
+    vertical-align:middle;
+    float:none;
+}
+
+.v-center img{
+  width: 140px;
+  height: 88px;
+}
+
 .container-fixed {
     height: 100%;
     display: table;

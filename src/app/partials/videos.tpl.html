@@ -1,9 +1,10 @@
-<div id="video" class="container-fluid">
-    <div class="row-fluid">
-        <div class="text-center">
-            <a ng-repeat="video in videos" class="fancybox-media" href="{{video.path}}">
+<div id="video" class="container">
+    <div class="text-center">
+        <a ng-repeat="video in videos" class="fancybox-media" data-caption="{{video.caption}}" href="{{video.path}}">
+            <figure>
                 <img src="{{video.thumbnail}}">
-            </a>
-        </div>
+                <figcaption>{{video.caption}}</figcaption>
+            </figure>
+        </a>
     </div>
 </div>

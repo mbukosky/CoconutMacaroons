@@ -235,6 +235,13 @@ body {
 .reviews-header h3, .reviews-header a {color:#c1e2ff;}
 .reviews-body {padding: 10px;}
 
+/* Video Style */
+
+#video {color:white;}
+#video a, #video figure {display: inline-block;}
+#video figcaption {margin: 10px 0 0 0;color: white;}
+#video figure {padding: 15px;}
+
 /* CUSTOMIZE ALIGNMENTS
 -------------------------------------------------- */
 .v-center {display:table!important; height:125px;}
@@ -243,11 +250,6 @@ body {
   display: table-cell!important;
     vertical-align:middle;
     float:none;
-}
-
-.v-center img{
-  width: 140px;
-  height: 88px;
 }
 
 .container-fixed {

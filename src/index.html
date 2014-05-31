@@ -60,6 +60,9 @@
                     closeEffect : 'none',
                     helpers : {
                         media : {}
+                    },
+                    beforeShow : function(){
+                        this.title =  $(this.element).data("caption");
                     }
             });
 

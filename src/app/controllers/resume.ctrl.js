@@ -80,7 +80,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
                 production: "Paul Storiale / The Actor's Temple Theater"
             }],
             off_off_broadway: [{
-                title: "All My Sons",
+                title: "All My Sons (2014)",
                 role: "Ann Deever (lead)",
                 production: "Susanna Frazer / The Morningside Players"
             }, {

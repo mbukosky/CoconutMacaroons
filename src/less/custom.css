@@ -228,6 +228,13 @@ body {
           transition: all 0.2s ease-in-out;  
 }
 
+/* Reviews Style */
+
+.reviews-container {color:white;}
+.reviews-header {}
+.reviews-header h3, .reviews-header a {color:#c1e2ff;}
+.reviews-body {padding: 10px;}
+
 /* CUSTOMIZE ALIGNMENTS
 -------------------------------------------------- */
 .v-center {display:table!important; height:125px;}

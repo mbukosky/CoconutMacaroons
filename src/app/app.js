@@ -34,6 +34,15 @@ app.config(['$routeProvider', '$locationProvider',
             templateUrl: '/src/app/partials/videos.tpl.html',
             controller: 'VideosCtrl'
         }).
+        when('/reviews', {
+            templateUrl: '/src/app/partials/reviews.tpl.html',
+            controller: 'BlankCtrl',
+            resolve: {
+                title: function() {
+                    return 'Reviews';
+                }
+            }
+        }).
         otherwise({
             redirectTo: '/'
         });

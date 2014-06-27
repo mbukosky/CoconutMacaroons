@@ -2,6 +2,10 @@ angular.module('app').controller('VideosCtrl', ['$scope',
     function($scope) {
 
         $scope.videos = [{
+            path: 'http://vimeo.com/laurenmeley/comedicscene',
+            thumbnail: 'http://i.vimeocdn.com/video/479945860_320.jpg',
+            caption: 'Comedic Scene (2014)'
+        }, {
             path: 'http://vimeo.com/87091260',
             thumbnail: '/src/assets/img/photos/video/kings.jpg',
             caption: 'Dramatic Reel (2014)'

@@ -5,7 +5,7 @@ angular.module('app').controller('PhotosCtrl', ['$scope', '$http',
 
         //TODO: Add a loader?
 
-        $http.jsonp("http://api.flickr.com/services/rest", {
+        $http.jsonp("https://api.flickr.com/services/rest", {
             params: {
                 method: 'flickr.photosets.getPhotos',
                 api_key: '8c6a5c097fe29a928b15bad86074d0aa',

@@ -12,7 +12,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
         }
 
         $scope.film = [{
-            title: "The Spaceship (feature, 2014; co-produced)",
+            title: "The Spaceship (feature, 2015; co-produced)",
             role: "Anna Shurin (lead)",
             production: "Eric Norcross / Dreamland Studios LLC"
         }, {
@@ -198,7 +198,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
 
         $scope.training = [{
             title: "Penny Templeton Studio",
-            role: "Master Scene Study (3 years; Ongoing)",
+            role: "Master Scene Study (3 years)",
             production: "Penny Templeton"
         }, {
             title: "Penny Templeton Studio",
@@ -261,7 +261,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
                 'General American', 'British', 'New York', 'West Irish', 'Southern'
             ],
             fun_facts: [
-                'Baltimore native', 'Graduated Magna Cum Laude from UMD', '*CAROLINE OF VIRGINIA won NY Spotlight Award at Manhattan Film Festival (2012)', '*Co-produced and starred in feature film THE SPACESHIP (2014)'
+                'Baltimore native', 'Graduated Magna Cum Laude from UMD', '*CAROLINE OF VIRGINIA won NY Spotlight Award at Manhattan Film Festival (2012)', '*Co-produced and starred in feature film THE SPACESHIP (2015)'
             ]
         };
     }

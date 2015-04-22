@@ -43,6 +43,10 @@ app.config(['$routeProvider', '$locationProvider',
                 }
             }
         }).
+        when('/writing-projects', {
+            templateUrl: '/src/app/partials/writing-projects.tpl.html',
+            controller: 'WritingProjectsCtrl'
+        }).
         otherwise({
             redirectTo: '/'
         });

@@ -3,7 +3,7 @@ angular.module('app').controller('VideosCtrl', ['$scope',
 
         $scope.videos = [{
             path: 'https://vimeo.com/178385241/',
-            thumbnail: '/src/assets/img/photos/news/media/Wake 1.tiff',
+            thumbnail: '/src/assets/img/photos/news/media/Wake_1.jpg',
             caption: 'By the Wake (2016)'
         }, {
             path: 'http://vimeo.com/laurenmeley/comedicscene',

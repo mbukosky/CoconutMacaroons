@@ -12,6 +12,10 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
         }
 
         $scope.film = [{
+            title: "By the Wake (2016)",
+            role: "Jessie (supporting)",
+            production: "Joe Cardamone / Twelvesteed Productions"
+        }, {
             title: "The Spaceship (feature, 2015; co-produced)",
             role: "Anna Shurin (lead)",
             production: "Eric Norcross / Dreamland Studios LLC"
@@ -80,7 +84,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
                 production: "Paul Storiale / The Actor's Temple Theater"
             }],
             off_off_broadway: [{
-                title: "All My Sons (2014)",
+                title: "All My Sons",
                 role: "Ann Deever (lead)",
                 production: "Susanna Frazer / The Morningside Players"
             }, {
@@ -110,20 +114,24 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
 
             }],
             baltimore: [{
+                title: "The Green Sweater (Staged Reading, 2016)",
+                role: "Parker (lead)",
+                production: "Hannah Fogler and Alexander Scally"
+            }, {
                 title: "You Can’t Take It With You",
-                role: "Essie Carmichael",
+                role: "Essie Carmichael (supporting)",
                 production: "Harry McShea / Perry Hall Theater"
             }, {
                 title: "Oklahoma",
-                role: "Dream Laurey",
+                role: "Dream Laurey (dance feature)",
                 production: "Harry McShea / Perry Hall Theater"
             }, {
                 title: "A Christmas Carol",
-                role: "Martha Cratchit",
+                role: "Martha Cratchit (supporting)",
                 production: "Paul Sacks / Wishing Star Theater"
             }, {
                 title: "Wind in the Willows",
-                role: "Piper",
+                role: "Piper (dance feature)",
                 production: "Paul Sacks / Wishing Star Theater"
             }]
         };

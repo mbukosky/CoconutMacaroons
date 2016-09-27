@@ -10,11 +10,10 @@ var server = http.createServer(app);
 app.set('port', process.env.PORT || 3000);
 
 app.get('/', function(req, res) {
-  res.sendfile('public/index.html');
+  res.sendFile('public/index.html' , { root : __dirname});
 });
 
 app.use(express.static('public'));
-// app.use(express.static('vendor'));
 
 server.listen(app.get('port'), 'localhost');
 server.on('listening', function() {

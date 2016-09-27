@@ -1,0 +1,32 @@
+{
+  "name": "coconut-macaroons",
+  "version": "1.0.0",
+  "description": "CoconutMacaroons ================",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mbukosky/CoconutMacaroons.git"
+  },
+  "keywords": [
+    "Lauren",
+    "Meley"
+  ],
+  "author": "Michael Bukosky <mbukosky@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mbukosky/CoconutMacaroons/issues"
+  },
+  "homepage": "https://github.com/mbukosky/CoconutMacaroons#readme",
+  "devDependencies": {
+    "browser-sync": "^2.16.0",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "http": "0.0.0"
+  }
+}

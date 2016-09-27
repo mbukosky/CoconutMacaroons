@@ -14,11 +14,11 @@ app.config(['$routeProvider', '$locationProvider',
 
         $routeProvider.
         when('/', {
-            templateUrl: '/src/app/partials/home.tpl.html',
+            templateUrl: 'app/partials/home.tpl.html',
             controller: 'ResumeCtrl'
         }).
         when('/news', {
-            templateUrl: '/src/app/partials/news.tpl.html',
+            templateUrl: 'app/partials/news.tpl.html',
             controller: 'BlankCtrl',
             resolve: {
                 title: function() {
@@ -27,15 +27,15 @@ app.config(['$routeProvider', '$locationProvider',
             }
         }).
         when('/photos', {
-            templateUrl: '/src/app/partials/photos.tpl.html',
+            templateUrl: 'app/partials/photos.tpl.html',
             controller: 'PhotosCtrl'
         }).
         when('/videos', {
-            templateUrl: '/src/app/partials/videos.tpl.html',
+            templateUrl: 'app/partials/videos.tpl.html',
             controller: 'VideosCtrl'
         }).
         when('/reviews', {
-            templateUrl: '/src/app/partials/reviews.tpl.html',
+            templateUrl: 'app/partials/reviews.tpl.html',
             controller: 'BlankCtrl',
             resolve: {
                 title: function() {
@@ -44,7 +44,7 @@ app.config(['$routeProvider', '$locationProvider',
             }
         }).
         when('/writing-projects', {
-            templateUrl: '/src/app/partials/writing-projects.tpl.html',
+            templateUrl: 'app/partials/writing-projects.tpl.html',
             controller: 'WritingProjectsCtrl'
         }).
         otherwise({

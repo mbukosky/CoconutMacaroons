@@ -7,7 +7,7 @@ var app = express();
 var server = http.createServer(app);
 
 // Setup port for server to run on
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8080);
 
 app.get('/', function(req, res) {
   res.sendFile('public/index.html' , { root : __dirname});
@@ -15,7 +15,7 @@ app.get('/', function(req, res) {
 
 app.use(express.static('public'));
 
-server.listen(app.get('port'), 'localhost');
-server.on('listening', function() {
+var server = app.listen(app.get('port'), function () {
   console.log('Express server started on port %s at %s', app.get('port'), server.address().address);
+  console.log('Press Ctrl+C to quit.');
 });

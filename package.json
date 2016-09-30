@@ -3,9 +3,13 @@
   "version": "1.0.0",
   "description": "CoconutMacaroons ================",
   "main": "server.js",
+  "private": true,
+  "engines": {
+    "node": "~4.2"
+  },
   "scripts": {
     "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gcloud app deploy"
   },
   "repository": {
     "type": "git",

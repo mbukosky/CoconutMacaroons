@@ -12,7 +12,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
         }
 
         $scope.film = [{
-            title: "By the Wake (2016)",
+            title: "By the Wake (short)*",
             role: "Jessie (supporting)",
             production: "Joe Cardamone / Twelvesteed Productions"
         }, {
@@ -269,7 +269,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
                 'General American', 'British', 'New York', 'West Irish', 'Southern'
             ],
             fun_facts: [
-                'Baltimore native', 'Graduated Magna Cum Laude from UMD', '*CAROLINE OF VIRGINIA won NY Spotlight Award at Manhattan Film Festival (2012)', '*Co-produced and starred in feature film THE SPACESHIP (2015)'
+                'Baltimore native', 'Graduated Magna Cum Laude from UMD', '*BY THE WAKE – Semi-Finalist at Los Angeles CineFest (2016)', '*CAROLINE OF VIRGINIA – NY Spotlight Award at Manhattan Film Festival (2012)', '*Co-produced and starred in feature film THE SPACESHIP (2015)'
             ]
         };
     }

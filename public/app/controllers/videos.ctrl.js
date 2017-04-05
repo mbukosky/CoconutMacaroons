@@ -4,15 +4,11 @@ angular.module('app').controller('VideosCtrl', ['$scope',
         $scope.videos = [{
             path: 'https://vimeo.com/178385241/',
             thumbnail: '/assets/img/photos/news/media/Wake_1.jpg',
-            caption: 'By the Wake (2016)'
+            caption: 'By the Wake (2016). Currently password protected for festival submissions.'
         }, {
             path: 'http://vimeo.com/87091260',
             thumbnail: '/assets/img/photos/video/kings.jpg',
             caption: 'Dramatic Reel (2014)'
-        }, {
-            path: 'http://player.vimeo.com/video/98990829',
-            thumbnail: 'http://i.vimeocdn.com/video/479945860_320.jpg',
-            caption: 'Comedic Audition Scene (2014)'
         }, {
             path: 'http://youtu.be/qf9M-WJPzgk',
             thumbnail: '/assets/img/photos/video/spaceship_teaser.jpg',

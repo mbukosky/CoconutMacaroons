@@ -12,6 +12,10 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
         }
 
         $scope.film = [{
+            title: "UnExpecting (short)",
+            role: "Carrie (lead)",
+            production: "Charles McHenry / StudioTEN Productions and McGreffen Studios"
+        }, {
             title: "By the Wake (short)*",
             role: "Jessie (supporting)",
             production: "Joe Cardamone / Twelvesteed Productions"

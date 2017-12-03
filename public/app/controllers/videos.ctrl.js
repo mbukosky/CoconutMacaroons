@@ -2,6 +2,10 @@ angular.module('app').controller('VideosCtrl', ['$scope',
     function($scope) {
 
         $scope.videos = [{
+            path: 'https://vimeo.com/245216518',
+            thumbnail: '/assets/img/photos/video/Unexpecting.jpg',
+            caption: 'UnExpecting (2017) - Watch Now on Vimeo!'
+        }, {
             path: 'https://vimeo.com/178385241/',
             thumbnail: '/assets/img/photos/news/media/Wake_1.jpg',
             caption: 'By the Wake (2016). Currently password protected for festival submissions.'

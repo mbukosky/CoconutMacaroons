@@ -8,7 +8,7 @@ angular.module('app').controller('VideosCtrl', ['$scope',
     }, {
       path: 'https://vimeo.com/178385241/',
       thumbnail: '/assets/img/photos/news/media/Wake_1.jpg',
-      caption: 'By the Wake (2016). Currently password protected for festival submissions.'
+      caption: 'By the Wake (2016) - Watch Now on Vimeo!'
     }, {
       path: 'http://vimeo.com/87091260',
       thumbnail: '/assets/img/photos/video/kings.jpg',
@@ -20,11 +20,11 @@ angular.module('app').controller('VideosCtrl', ['$scope',
     }, {
       path: 'http://youtu.be/Ei7mnO9GRHc',
       thumbnail: '/assets/img/photos/video/starwars.jpg',
-      caption: 'Star Wars VII Audition Video  -  yep, I did it!'
+      caption: 'Star Wars VII Audition Video - yep, I did it!'
     }, {
       path: 'http://youtu.be/feFac2oLL6M',
       thumbnail: '/assets/img/photos/video/cov.jpg',
-      caption: 'CAROLINE OF VIRGINIA  -  Full Movie'
+      caption: 'CAROLINE OF VIRGINIA - Full Movie'
     }, {
       path: 'http://youtu.be/s-qEA4jW-Pk',
       thumbnail: '/assets/img/photos/video/speedreel.jpg',

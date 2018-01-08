@@ -61,7 +61,7 @@ body {
   -ms-transition: background 0.1s linear,opacity 0.1s linear;
   -o-transition: background 0.1s linear,opacity 0.1s linear;
   transition: background 0.1s linear,opacity 0.1s linear;
-  -webkit-font-smoothing: antialiased;      
+  -webkit-font-smoothing: antialiased;
   opacity: .9;
   font-weight: 600;
 }
@@ -75,9 +75,9 @@ body {
   opacity: 1;
 }
 
-.navbar-xs .navbar-default .navbar { min-height:28px; } 
-.navbar-xs .navbar-default .navbar .navbar-brand{ padding: 8px 8px 8px 30px;font-size: 16px;line-height: 18px; } 
-.navbar-xs .navbar-default .navbar .navbar-nav > li > a {  padding-top: 7px; padding-bottom: 7px; line-height: 20px; } 
+.navbar-xs .navbar-default .navbar { min-height:28px; }
+.navbar-xs .navbar-default .navbar .navbar-brand{ padding: 8px 8px 8px 30px;font-size: 16px;line-height: 18px; }
+.navbar-xs .navbar-default .navbar .navbar-nav > li > a {  padding-top: 7px; padding-bottom: 7px; line-height: 20px; }
 
 /* Featurettes
 ------------------------- */
@@ -99,13 +99,13 @@ body {
 /* Header Wrap */
 #headerwrap {
   background: url(../assets/img/photos/bio/media/bio_header.jpg) no-repeat center top;
-  padding-top:140px;
+  padding-top:65px;
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 500px;
+  min-height: 800px;
   width: 100%;
-  
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -118,8 +118,9 @@ body {
 }
 
 #headerwrap h1 {
-  font-size: 70px;
-  color: white;
+  font-size: 120px;
+  color: #34373e;
+  font-family: unset;
 }
 
 #headerwrap h3 {
@@ -215,17 +216,17 @@ body {
   color: white;
 }
 
-.img-thumbnail {  
-  display: inline-block;  
-  height: auto;  
-  max-width: 100%;  
-  padding: 1px;  
-  line-height: 1.428571429;  
-  background-color: #ffffff;  
-  border: 1px solid #dddddd;  
-  border-radius: 4px;  
-  -webkit-transition: all 0.2s ease-in-out;  
-          transition: all 0.2s ease-in-out;  
+.img-thumbnail {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 1px;
+  line-height: 1.428571429;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+          transition: all 0.2s ease-in-out;
 }
 
 /* Reviews Style */

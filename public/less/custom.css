@@ -98,7 +98,7 @@ body {
 
 /* Header Wrap */
 #headerwrap {
-  background: url(../assets/img/photos/bio/media/bio_header.jpg) no-repeat center top;
+  background: url(../assets/img/photos/bio/media/bio_header_vertical.jpg) no-repeat center top;
   padding-top:65px;
   text-align:center;
   background-attachment: relative;
@@ -115,6 +115,13 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+@media only screen and (max-width: 500px) {
+    #headerwrap {
+      padding-top:250px;
+      min-height: 100px;
+    }
 }
 
 #headerwrap h1 {

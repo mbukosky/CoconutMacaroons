@@ -12,11 +12,11 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
     }
 
     $scope.film = [{
-      title: "UnExpecting (short)",
+      title: "UnExpecting (short, 2017)",
       role: "Carrie (lead)",
       production: "Charles McHenry / StudioTEN Productions and McGreffen Studios"
     }, {
-      title: "By the Wake (short)*",
+      title: "By the Wake (short, 2016)*",
       role: "Jessie (supporting)",
       production: "Joe Cardamone / Twelvesteed Productions"
     }, {
@@ -88,7 +88,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
         production: "Paul Storiale / The Actor's Temple Theater"
       }],
       off_off_broadway: [{
-        title: "All My Sons",
+        title: "All My Sons (AEA Showcase)",
         role: "Ann Deever (lead)",
         production: "Susanna Frazer / The Morningside Players"
       }, {
@@ -141,6 +141,10 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
     };
 
     $scope.tv = [{
+      title: "Bride Killa Ep. 102 Blinded by Money (2018)",
+      role: "Amber Smith (principal)",
+      production: "Justin Wolfe / Discovery ID Network"
+    }, {
       title: "Most Likely To...",
       role: "Rebecca (principal)",
       production: "Greg Palmer / Discovery ID Network"
@@ -152,10 +156,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
       title: "Oleanna",
       role: "Carol (principal)",
       production: "Cory Stambler / NYU Television Project"
-    }, {
-      title: "Family Practice",
-      role: "Miss Maritz (guest)",
-      production: "Eric Norcross / Norcross Media LLC"
+
 
     }];
 
@@ -167,6 +168,10 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
       title: "Roommates",
       role: "Pam (supporting)",
       production: "Ray Gootz / Ray Gootz Productions"
+    }, {
+      title: "Family Practice",
+      role: "Miss Maritz (guest)",
+      production: "Eric Norcross / Norcross Media LLC"
     }, {
       title: "Connections",
       role: "Lauren (principal)",

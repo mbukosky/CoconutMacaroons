@@ -2,6 +2,10 @@ angular.module('app').controller('VideosCtrl', ['$scope',
   function($scope) {
 
     $scope.videos = [{
+      path: 'https://vimeo.com/255220709',
+      thumbnail: '/assets/img/photos/video/Reel_happy.jpeg',
+      caption: 'Acting Reel (2018) - Watch Now on Vimeo!'
+    }, {
       path: 'https://vimeo.com/245216518',
       thumbnail: '/assets/img/photos/video/Unexpecting.jpg',
       caption: 'UnExpecting (2017) - Watch Now on Vimeo!'
@@ -10,8 +14,12 @@ angular.module('app').controller('VideosCtrl', ['$scope',
       thumbnail: '/assets/img/photos/news/media/Wake_1.jpg',
       caption: 'By the Wake (2016) - Watch Now on Vimeo!'
     }, {
+      path: 'https://youtu.be/LcBKkqKtRjg',
+      thumbnail: '/assets/img/photos/video/unexpecting_black.jpeg',
+      caption: 'UnExpecting Trailer (2017) - Watch Now on YouTube!'
+    }, {
       path: 'http://vimeo.com/87091260',
-      thumbnail: '/assets/img/photos/video/kings.jpg',
+      thumbnail: '/assets/img/photos/video/Old_reel.jpeg',
       caption: 'Dramatic Reel (2014)'
     }, {
       path: 'http://youtu.be/qf9M-WJPzgk',

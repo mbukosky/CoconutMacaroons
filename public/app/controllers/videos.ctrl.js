@@ -2,7 +2,7 @@ angular.module('app').controller('VideosCtrl', ['$scope',
   function($scope) {
 
     $scope.videos = [{
-      path: 'https://vimeo.com/255220709',
+      path: 'https://vimeo.com/255286419',
       thumbnail: '/assets/img/photos/video/Reel_happy.jpeg',
       caption: 'Acting Reel (2018) - Watch Now on Vimeo!'
     }, {

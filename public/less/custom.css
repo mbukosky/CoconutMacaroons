@@ -98,23 +98,23 @@ body {
 
 /* Header Wrap */
 #headerwrap {
-  background: url(../assets/img/photos/bio/media/bio_header_vertical.jpg) no-repeat center top;
-  padding-top:65px;
+  /* background: url(../assets/img/photos/bio/media/bio_pic_small.jpg) no-repeat center top; */
+  /* padding-top:1000px; */
   text-align:center;
   background-attachment: relative;
   background-position: center center;
-  min-height: 800px;
-  width: 100%;
+  /* min-height: 800px; */
+  width: 50%;
 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
     background-size: 100%;
 
-    -webkit-background-size: cover;
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: cover; */
 }
 
 @media only screen and (max-width: 500px) {
@@ -139,8 +139,8 @@ body {
 
 #intro {
   background: #354C5D;
-  padding-top: 30px;
-  padding-bottom: 60px;
+  /* padding-top: 30px; */
+  /* padding-bottom: 60px; */
   color: white;
 }
 
@@ -234,6 +234,16 @@ body {
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
           transition: all 0.2s ease-in-out;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.bio-headshot {
+  padding-right: 20px;
+  /* max-height: 800px; */
 }
 
 /* Reviews Style */

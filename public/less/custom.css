@@ -118,9 +118,9 @@ body {
 }
 
 @media only screen and (max-width: 500px) {
-    #headerwrap {
-      padding-top:250px;
-      min-height: 100px;
+    #intro .bio {
+      padding-left:50px;
+      padding-right:110px;
     }
 }
 
@@ -284,6 +284,11 @@ body {
     width: 100%;
     padding-right: 0;
     padding-left: 0;
+}
+
+.container-pull-left {
+    margin-right: auto;
+    padding-right: 15px;
 }
 
 .row-fluid {

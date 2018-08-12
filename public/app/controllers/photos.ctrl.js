@@ -18,10 +18,10 @@ angular.module('app').controller('PhotosCtrl', ['$scope', '$http',
         	/*
         	* Add the images as links with thumbnails to the template
         	*/
-            var baseUrl;      
+            var baseUrl;
             angular.forEach(data.photoset.photo, function(photo, i) {
 
-                baseUrl = 'http://farm' + photo.farm + '.static.flickr.com/' +
+                baseUrl = 'https://farm' + photo.farm + '.static.flickr.com/' +
                     photo.server + '/' + photo.id + '_' + photo.secret;
 
                 var imgThumb = baseUrl + '_t.jpg';

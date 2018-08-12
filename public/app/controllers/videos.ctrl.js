@@ -18,23 +18,23 @@ angular.module('app').controller('VideosCtrl', ['$scope',
       thumbnail: '/assets/img/photos/video/unexpecting_black.jpeg',
       caption: 'UnExpecting Trailer (2017) - Watch Now on YouTube!'
     }, {
-      path: 'http://vimeo.com/87091260',
+      path: 'https://vimeo.com/87091260',
       thumbnail: '/assets/img/photos/video/Old_reel.jpeg',
       caption: 'Dramatic Reel (2014)'
     }, {
-      path: 'http://youtu.be/qf9M-WJPzgk',
+      path: 'https://youtu.be/qf9M-WJPzgk',
       thumbnail: '/assets/img/photos/video/spaceship_teaser.jpg',
       caption: 'THE SPACESHIP Teaser (2014)'
     }, {
-      path: 'http://youtu.be/Ei7mnO9GRHc',
+      path: 'https://youtu.be/Ei7mnO9GRHc',
       thumbnail: '/assets/img/photos/video/starwars.jpg',
       caption: 'Star Wars VII Audition Video - yep, I did it!'
     }, {
-      path: 'http://youtu.be/feFac2oLL6M',
+      path: 'https://youtu.be/feFac2oLL6M',
       thumbnail: '/assets/img/photos/video/cov.jpg',
       caption: 'CAROLINE OF VIRGINIA - Full Movie'
     }, {
-      path: 'http://youtu.be/s-qEA4jW-Pk',
+      path: 'https://youtu.be/s-qEA4jW-Pk',
       thumbnail: '/assets/img/photos/video/speedreel.jpg',
       caption: 'Speed Reel. Compilation of projects from 2007 - 2010.'
     }];

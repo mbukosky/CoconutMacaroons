@@ -12,6 +12,10 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
     }
 
     $scope.film = [{
+      title: "Cancellation (feature, 2019)",
+      role: "Bea (lead)",
+      production: "Justin Timpane / Endlight Productions"
+    }, {
       title: "UnExpecting (short, 2017)",
       role: "Carrie (lead)",
       production: "Charles McHenry / StudioTEN Productions and McGreffen Studios"
@@ -269,7 +273,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
 
     $scope.special = {
       general: [
-        'Stage Combat', 'Basic French', 'Marching Band Pom Squad / Color Guard'
+        'Stage Combat', 'Basic French', 'Scavenger Hunting'
       ],
       dance_movement: [
         'Ballet', 'Modern', 'Jazz', 'Tap', 'Advanced Yoga', 'Pilates', 'Boot Camps', 'Kickboxing'
@@ -277,8 +281,8 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
       accents: [
         'General American', 'British', 'New York', 'West Irish', 'Southern'
       ],
-      fun_facts: [
-        'Baltimore native', 'Graduated Magna Cum Laude from UMD', '*BY THE WAKE – Semi-Finalist at Los Angeles CineFest (2016)', '*CAROLINE OF VIRGINIA – NY Spotlight Award at Manhattan Film Festival (2012)', '*Co-produced and starred in feature film THE SPACESHIP (2015)'
+      awards: [
+        '*BY THE WAKE – Semi-Finalist at Los Angeles CineFest (2016)', '*CAROLINE OF VIRGINIA – NY Spotlight Award at Manhattan Film Festival (2012)', '*Co-produced and starred in feature film THE SPACESHIP (2015)'
       ]
     };
   }

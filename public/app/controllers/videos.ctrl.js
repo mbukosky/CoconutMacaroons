@@ -2,6 +2,10 @@ angular.module('app').controller('VideosCtrl', ['$scope',
   function($scope) {
 
     $scope.videos = [{
+      path: 'https://www.youtube.com/watch?v=dsTipVNaj38',
+      thumbnail: '/assets/img/photos/video/Cancellation_trailer.png',
+      caption: 'Cancellation Trailer (2019) - Watch Now on YouTube!'
+    }, {
       path: 'https://vimeo.com/255286419',
       thumbnail: '/assets/img/photos/video/Reel_happy.jpeg',
       caption: 'Acting Reel (2018) - Watch Now on Vimeo!'

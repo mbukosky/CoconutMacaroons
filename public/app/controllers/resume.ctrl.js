@@ -12,7 +12,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
     }
 
     $scope.film = [{
-      title: "Cancellation (feature, 2019)",
+      title: "Cancellation (feature, 2020)",
       role: "Bea (lead)",
       production: "Justin Timpane / Endlight Productions"
     }, {
@@ -24,7 +24,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
       role: "Jessie (supporting)",
       production: "Joe Cardamone / Twelvesteed Productions"
     }, {
-      title: "The Spaceship (feature, 2015; co-produced)",
+      title: "Ataraxia (feature, 2015; co-produced)",
       role: "Anna Shurin (lead)",
       production: "Eric Norcross / Dreamland Studios LLC"
     }, {
@@ -282,7 +282,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
         'General American', 'British', 'New York', 'West Irish', 'Southern'
       ],
       awards: [
-        '*BY THE WAKE – Semi-Finalist at Los Angeles CineFest (2016)', '*CAROLINE OF VIRGINIA – NY Spotlight Award at Manhattan Film Festival (2012)', '*Co-produced and starred in feature film THE SPACESHIP (2015)'
+        '*BY THE WAKE – Semi-Finalist at Los Angeles CineFest (2016)', '*CAROLINE OF VIRGINIA – NY Spotlight Award at Manhattan Film Festival (2012)', '*Co-produced and starred in feature film ATARAXIA (2015)'
       ]
     };
   }

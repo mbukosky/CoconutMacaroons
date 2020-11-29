@@ -12,7 +12,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
     }
 
     $scope.film = [{
-      title: "Cancellation (feature, 2020)*",
+      title: "A Christmas Cancellation (feature, 2020)*",
       role: "Bea (lead)",
       production: "Justin Timpane / Endlight Productions"
     }, {
@@ -282,7 +282,7 @@ angular.module('app').controller('ResumeCtrl', ['$scope', '$anchorScroll', '$doc
         'General American', 'British', 'New York', 'West Irish', 'Southern'
       ],
       awards: [
-        '*CANCELLATION - "Best Actor" at Columbia Film Festival (2020), "Best Actress" at Venice Film Awards (2020)', '*BY THE WAKE – Semi-Finalist at Los Angeles CineFest (2016)', '*CAROLINE OF VIRGINIA – NY Spotlight Award at Manhattan Film Festival (2012)', '*Co-produced and starred in feature film ATARAXIA (2015)'
+        '*A CHRISTMAS CANCELLATION - "Best Actor" at Columbia Film Festival (2020), "Best Actress" at Venice Film Awards (2020)', '*BY THE WAKE – Semi-Finalist at Los Angeles CineFest (2016)', '*CAROLINE OF VIRGINIA – NY Spotlight Award at Manhattan Film Festival (2012)', '*Co-produced and starred in feature film ATARAXIA (2015)'
       ]
     };
   }

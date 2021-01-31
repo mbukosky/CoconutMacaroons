@@ -2,7 +2,7 @@ angular.module('app').controller('VideosCtrl', ['$scope',
   function($scope) {
 
     $scope.videos = [{
-      path: 'https://www.youtube.com/watch?v=WslBAonZN4I',
+      path: 'https://youtu.be/mLaIfb8x85Y',
       thumbnail: '/assets/img/photos/video/Reel_Pic.png',
       caption: 'Acting Reel (2021) - Watch Now on YouTube!'
     }, {
